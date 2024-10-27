@@ -64,6 +64,8 @@
 
 .descrição__texto {
     font-size: 14px;
+    line-height: 1.5;
+    color: #333;
 }
 
 .botões__ancora {
