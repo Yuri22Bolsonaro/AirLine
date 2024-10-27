@@ -10,14 +10,17 @@
 
 .swiper-slide img {
     width: 100%;
+    max-width: 302px; /* Define o limite máximo da largura */
+    max-height: 423px; /* Define o limite máximo da altura */
+    object-fit: cover; /* Faz com que a imagem preencha a área sem distorcer */
+    display: block; /* Garante que a imagem se comporte como um bloco */
+    margin: 0 auto; /* Centraliza a imagem no slide */
 }
-
 
 .swiper-button-prev,
 .swiper-button-next {
     display: none;
 }
-
 
 .swiper-pagination {
     position: initial;
@@ -36,7 +39,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5em;
-
 }
 
 .card__botões {
@@ -47,7 +49,6 @@
 .botões {
     display: flex;
 }
-
 
 .descrição__titulo {
     color: var(--laranja);
