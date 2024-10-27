@@ -6,76 +6,28 @@
 @import url("styles/rodapé.css");
 
 :root {
-  --cor-de-fundo: linear-gradient(180deg, #87CEEB 0%, #E0F7FA 100%); /* Gradiente de azul claro para o céu */
-  --cor-estrela: #FFFFFF; /* Cor branca para as estrelas */
-  --cor-nuvem: #FFFFFF; /* Cor branca para as nuvens */
-  --fonte-principal: "Poppins", sans-serif;
+    --cor-de-fundo: #EBECEE; /* Um tom suave que representa nuvens */
+    --cor-de-fundo: linear-gradient(180deg, #87CEEB 0%, #A7C6ED 100%); /* Gradiente do céu azul */
+    --branco: #FFFFFF; /* Branco puro, representando nuvens e espaço aéreo */
+    --laranja: #EB9B00; /* Um tom de laranja que pode remeter ao pôr do sol */
+    --laranja: #F4A300; /* Laranja mais claro, simbolizando o pôr do sol */
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%); /* Azul do céu profundo */
+    --fonte-principal: "Poppins";
+    --azul: #002F52; /* Azul marinho, remetendo a segurança e estabilidade */
+
+    /* Novas cores */
+    --azul-claro: #A7C6ED; /* Azul claro, lembrando o céu em um dia ensolarado */
+    --cinza-nuvem: #D0D3D4; /* Cinza suave, parecido com nuvens */
+    --amarelo-pouso: #F7EA00; /* Amarelo claro, pode simbolizar luz e esperança, como luzes de pouso */
+    --amarelo-pouso: #F7EA00; /* Amarelo claro, simbolizando luz e esperança, como luzes de pouso */
+    --verde-seguro: #A3D2A5; /* Verde suave, representando segurança e tranquilidade */
 }
 
 body {
-  background: var(--cor-de-fundo);
-  font-family: var(--fonte-principal);
-  font-size: 16px;
-  font-weight: 400;
-  color: #002F52;
-  overflow: hidden;
-}
-
-/* Estrelas */
-.stars {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background: radial-gradient(circle, var(--cor-estrela) 1px, transparent 1px);
-  background-size: 3px 3px;
-  opacity: 0.6;
-}
-
-/* Nuvens */
-.nuvem {
-  position: absolute;
-  background: var(--cor-nuvem);
-  width: 150px;
-  height: 80px;
-  border-radius: 100px;
-  opacity: 0.7;
-}
-
-.nuvem::before,
-.nuvem::after {
-  content: '';
-  position: absolute;
-  background: var(--cor-nuvem);
-  width: 120px;
-  height: 70px;
-  border-radius: 100px;
-}
-
-.nuvem::before {
-  top: -20px;
-  left: 20px;
-}
-
-.nuvem::after {
-  top: 10px;
-  left: 60px;
-}
-
-/* Posições das nuvens */
-.nuvem-1 {
-  top: 20%;
-  left: 15%;
-}
-
-.nuvem-2 {
-  top: 40%;
-  left: 60%;
-}
-
-.nuvem-3 {
-  top: 70%;
-  left: 30%;
+    background-color: var(--cor-de-fundo);
+    background: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--azul); /* Usar azul como a cor do texto para contraste */
 }
