@@ -6,24 +6,47 @@
 @import url("styles/rodapé.css");
 
 :root {
-    --cor-de-fundo: linear-gradient(180deg, #87CEEB 0%, #A7C6ED 100%); /* Gradiente do céu azul */
-    --branco: #FFFFFF; /* Branco puro, representando nuvens e espaço aéreo */
-    --laranja: #F4A300; /* Laranja mais claro, simbolizando o pôr do sol */
-    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%); /* Azul do céu profundo */
-    --fonte-principal: "Poppins";
-    --azul: #002F52; /* Azul marinho, remetendo a segurança e estabilidade */
-    
-    /* Novas cores */
-    --azul-claro: #A7C6ED; /* Azul claro, lembrando o céu em um dia ensolarado */
-    --cinza-nuvem: #D0D3D4; /* Cinza suave, parecido com nuvens */
-    --amarelo-pouso: #F7EA00; /* Amarelo claro, simbolizando luz e esperança, como luzes de pouso */
-    --verde-seguro: #A3D2A5; /* Verde suave, representando segurança e tranquilidade */
+  --cor-de-fundo: linear-gradient(180deg, #87CEEB 0%, #A7C6ED 100%); /* Gradiente do céu azul */
+  --branco: #FFFFFF; /* Branco puro, representando nuvens e espaço aéreo */
+  --laranja: #F4A300; /* Laranja mais claro, simbolizando o pôr do sol */
+  --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%); /* Azul do céu profundo */
+  --fonte-principal: "Poppins";
+  --azul: #002F52; /* Azul marinho, remetendo a segurança e estabilidade */
+  /* Novas cores */
+  --azul-claro: #A7C6ED; /* Azul claro, lembrando o céu em um dia ensolarado */
+  --cinza-nuvem: #D0D3D4; /* Cinza suave, parecido com nuvens */
+  --amarelo-pouso: #F7EA00; /* Amarelo claro, simbolizando luz e esperança, como luzes de pouso */
+  --verde-seguro: #A3D2A5; /* Verde suave, representando segurança e tranquilidade */
 }
 
 body {
-    background: var(--cor-de-fundo);
-    font-family: var(--fonte-principal);
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--azul); /* Usar azul como a cor do texto para contraste */
+  background: var(--cor-de-fundo);
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--azul); /* Usar azul como a cor do texto para contraste */
+}
+
+header {
+  background: var(--azul-degrade);
+  color: var(--branco);
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background: var(--laranja);
+  color: var(--branco);
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
 }
