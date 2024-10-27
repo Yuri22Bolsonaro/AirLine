@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +13,11 @@
 </head>
 
 <body>
+  <div class="stars"></div>
+  <div class="nuvem nuvem-1"></div>
+  <div class="nuvem nuvem-2"></div>
+  <div class="nuvem nuvem-3"></div>
+
   <header class="cabeçalho">
     <div class="container">
       <input type="checkbox" id="menu" class="container__botao">
@@ -21,22 +25,12 @@
         <span class="cabeçalho__menu-hamburguer container__imagem"></span>
       </label>
       <ul class="lista-menu">
-<li class="lista-menu__titulo">Categorias</li>
-<li class="lista-menu__item">
-  <a href="#" class="lista-menu__link">Manutenção de Aeronaves</a>
-</li>
-<li class="lista-menu__item">
-  <a href="#" class="lista-menu__link">Navegação Aérea</a>
-</li>
-<li class="lista-menu__item">
-  <a href="#" class="lista-menu__link">Segurança de Voo</a>
-</li>
-<li class="lista-menu__item">
-  <a href="#" class="lista-menu__link">Economia da Aviação</a>
-</li>
-<li class="lista-menu__item">
-  <a href="#" class="lista-menu__link">Design de Aeronaves</a>
-        </li>
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Manutenção de Aeronaves</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Navegação Aérea</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Segurança de Voo</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Economia da Aviação</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Design de Aeronaves</a></li>
       </ul>
       <img src="img/Logo.png" alt="Logo da AirLineBooks" width="75" height="75" class="container__imagem">
     </div>
@@ -55,155 +49,16 @@
 
   <section class="carrossel">
     <h2 class="carrossel__titulo">Novos lançamentos</h2>
-    <!-- Slider main container -->
     <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <img src="img/GeralAero.jpg" alt="Livro sobre apache aviação geral">
-            </div>
-            <div class="swiper-slide">
-                <img src="img/voo.png" alt="Livro sobre Voo em design design da AirLineBooks">
-            </div>
-            <div class="swiper-slide">
-                <img src="img/Piloto.jpg" alt="Livro sobre como se tornar piloto da AirLineBooks">
-            </div>
-            <div class="swiper-slide">
-                <img src="img/Avião.jpg" alt="Livro Guia de avião">
-            </div>
-            <div class="swiper-slide">
-                <img src="img/Almanaque.jpg" alt="Livro sobre avião">
-            </div>
-            <div class="swiper-slide">
-                <img src="img/Embraer.jpg" alt="Livro sobre a Embraer">
-            </div>
-        </div>
-    </div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-    </div>
-
-    <div class="card">
-      <div class="card__descrição">
-        <div class="descrição">
-          <h3 class="descrição__titulo">Para melhor experiência recomendamos...</h3>
-          <h2 class="descrição__titulo-livro">Opera GX</h2>
-          <p class="descrição__texto">
-            Controle o uso de CPU, RAM e oculte abas com o navegador original para jogadores.
-          </p>
-        </div>
-        <img src="img/OperaGX.png" alt="Opera GX" class="descrição__imagem" style="width: 162px; height: 168px; object-fit: cover;" />
-      </div>
-      <div class="card__botões">
-        <ul class="botões">
-          <li class="botões__item">
-            <img src="img/Favoritos.svg" alt="Favoritar livro" />
-          </li>
-          <li class="botões__item">
-            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
-          </li>
-        </ul>
-        <a href="https://www.opera.com/pt-br/gx" class="botões__ancora" target="_blank">Saiba mais</a>
-      </div>
-    </div>
-
-  </section>
-
-  <section class=”carrossel”>
-    <h2 class="carrossel__titulo">Mais vendidos</h2>
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
       <div class="swiper-wrapper">
-        <!-- Slides -->
         <div class="swiper-slide">
-          <img src="img/GeralAero.jpg" alt="Livro sobre apache aviação geral" width="302" height="423">
-        </div>
-        <div class="swiper-slide">
-          <img src="img/Piloto.jpg" alt="Livro sobre como se tornar piloto" width="302" height="423">
-        </div>
-        <div class="swiper-slide">
-          <img src="img/Avião.jpg" alt="Livro curiosidade de aviação" width="302" height="423">
+          <img src="img/GeralAero.jpg" alt="Livro sobre apache aviação geral">
         </div>
       </div>
-
-      <!-- If we need navigation buttons -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-
-    <div class="card">
-      <!-- 1º linha -->
-      <div class="card__descrição">
-        <!-- 1º coluna -->
-        <div class="descrição">
-          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
-          <h3 class="descrição__titulo">Influencer do Mês</h3>
-          <h2 class="descrição__titulo-livro">Lito Sousa</h2>
-          <p class="descrição__texto">É um piloto, mecânico de aviação e especialista em segurança aérea, sendo que já atuou como mecânico e supervisor de voo em grandes empresas como a Varig, Transbrasil e United Airlines.
-          </p>
-        </div>
-        <!-- 2º coluna -->
-        <img src="img/LitoSousa.jpg" width="162" height="168" class="descrição__imagem">
-      </div>
-
-      <!-- 2º linha -->
-      <div class="card__botões">
-        <!-- 1º coluna -->
-        <ul class="botões">
-          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
-          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
-        </ul>
-        <!-- 2º coluna -->
-        <a href="https://pt.wikipedia.org/wiki/Lito_Sousa" class="botões__ancora" target="_blank">Saiba mais</a>
-      </div>
-    </div>
-
-
-
   </section>
-
-  <section class="tópicos">
-    <h2 class="tópicos__titulo">MAiS SOBRE AERONÁUTICA</h2>
-    <ul class="tópicos__lista">
-     <li class="tópicos__item">
-       <a href="https://embraer.com/br/pt" class="tópicos__link" target="_blank">Embraer</a>
-     </li>
-  <li class="tópicos__item">
-    <a href="https://www.gov.br/anac/pt-br" class="tópicos__link" target="_blank">ANAC</a>
-  </li>
-  <li class="tópicos__item">
-    <a href="https://www.fab.mil.br" class="tópicos__link" target="_blank">Força Aérea Brasileira</a>
-  </li>
-  <li class="tópicos__item">
-    <a href="https://www.boeing.com" class="tópicos__link" target="_blank">Boeing</a>
-  </li>
-  <li class="tópicos__item">
-    <a href="https://www.airbus.com" class="tópicos__link" target="_blank">Airbus</a>
-  </li>
-      
-    </ul>
-  </section>
-
-  <section class="contato">
-    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-    <p class="contato__texto">
-      Atualizações de e-books, novos livros, promoções e outros.
-    </p>
-    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
-  </section>
-
-  <hr />
-
-  <footer class="rodapé">
-    <h2 class="rodapé__titulo">Grupo AirLine</h2>
-  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
@@ -217,5 +72,4 @@
     });
   </script>
 </body>
-
 </html>
