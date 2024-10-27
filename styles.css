@@ -27,7 +27,3 @@ body {
     font-weight: 400;
     color: var(--azul); /* Usar azul como a cor do texto para contraste */
 }
-
-    top: 10px;
-    left: 50px;
-}
