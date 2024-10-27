@@ -6,52 +6,76 @@
 @import url("styles/rodapé.css");
 
 :root {
-    --cor-de-fundo: linear-gradient(180deg, #87CEEB 0%, #A7C6ED 100%); /* Gradiente do céu azul */
-    --cor-nuvens: #FFFFFF; /* Cor das nuvens */
-    --cor-sol: #F4A300; /* Laranja claro representando o pôr do sol */
-    --gradiente-ceu-profundo: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%); /* Gradiente para o céu profundo */
-    --fonte-principal: "Poppins", sans-serif;
+  --cor-de-fundo: linear-gradient(180deg, #87CEEB 0%, #E0F7FA 100%); /* Gradiente de azul claro para o céu */
+  --cor-estrela: #FFFFFF; /* Cor branca para as estrelas */
+  --cor-nuvem: #FFFFFF; /* Cor branca para as nuvens */
+  --fonte-principal: "Poppins", sans-serif;
 }
 
 body {
-    background: var(--cor-de-fundo);
-    font-family: var(--fonte-principal);
-    color: var(--cor-sol); /* Ajuste para cor do texto se necessário */
+  background: var(--cor-de-fundo);
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 400;
+  color: #002F52;
+  overflow: hidden;
 }
 
-.header {
-    background: var(--gradiente-ceu-profundo);
-    padding: 20px;
-    color: var(--cor-nuvens);
-    text-align: center;
-    font-size: 24px;
+/* Estrelas */
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: radial-gradient(circle, var(--cor-estrela) 1px, transparent 1px);
+  background-size: 3px 3px;
+  opacity: 0.6;
 }
 
-/* Cria nuvens de forma estilizada */
+/* Nuvens */
 .nuvem {
-    background: var(--cor-nuvens);
-    width: 100px;
-    height: 60px;
-    border-radius: 50px;
-    position: relative;
+  position: absolute;
+  background: var(--cor-nuvem);
+  width: 150px;
+  height: 80px;
+  border-radius: 100px;
+  opacity: 0.7;
 }
 
 .nuvem::before,
 .nuvem::after {
-    content: '';
-    background: var(--cor-nuvens);
-    position: absolute;
-    width: 100px;
-    height: 60px;
-    border-radius: 50px;
+  content: '';
+  position: absolute;
+  background: var(--cor-nuvem);
+  width: 120px;
+  height: 70px;
+  border-radius: 100px;
 }
 
 .nuvem::before {
-    top: -20px;
-    left: 20px;
+  top: -20px;
+  left: 20px;
 }
 
 .nuvem::after {
-    top: 10px;
-    left: 50px;
+  top: 10px;
+  left: 60px;
+}
+
+/* Posições das nuvens */
+.nuvem-1 {
+  top: 20%;
+  left: 15%;
+}
+
+.nuvem-2 {
+  top: 40%;
+  left: 60%;
+}
+
+.nuvem-3 {
+  top: 70%;
+  left: 30%;
 }
