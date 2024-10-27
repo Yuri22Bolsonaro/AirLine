@@ -7,23 +7,51 @@
 
 :root {
     --cor-de-fundo: linear-gradient(180deg, #87CEEB 0%, #A7C6ED 100%); /* Gradiente do céu azul */
-    --branco: #FFFFFF; /* Branco puro, representando nuvens e espaço aéreo */
-    --laranja: #F4A300; /* Laranja mais claro, simbolizando o pôr do sol */
-    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%); /* Azul do céu profundo */
-    --fonte-principal: "Poppins";
-    --azul: #002F52; /* Azul marinho, remetendo a segurança e estabilidade */
-    
-    /* Novas cores */
-    --azul-claro: #A7C6ED; /* Azul claro, lembrando o céu em um dia ensolarado */
-    --cinza-nuvem: #D0D3D4; /* Cinza suave, parecido com nuvens */
-    --amarelo-pouso: #F7EA00; /* Amarelo claro, simbolizando luz e esperança, como luzes de pouso */
-    --verde-seguro: #A3D2A5; /* Verde suave, representando segurança e tranquilidade */
+    --cor-nuvens: #FFFFFF; /* Cor das nuvens */
+    --cor-sol: #F4A300; /* Laranja claro representando o pôr do sol */
+    --gradiente-ceu-profundo: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%); /* Gradiente para o céu profundo */
+    --fonte-principal: "Poppins", sans-serif;
 }
 
 body {
     background: var(--cor-de-fundo);
     font-family: var(--fonte-principal);
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--azul); /* Usar azul como a cor do texto para contraste */
+    color: var(--cor-sol); /* Ajuste para cor do texto se necessário */
+}
+
+.header {
+    background: var(--gradiente-ceu-profundo);
+    padding: 20px;
+    color: var(--cor-nuvens);
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Cria nuvens de forma estilizada */
+.nuvem {
+    background: var(--cor-nuvens);
+    width: 100px;
+    height: 60px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.nuvem::before,
+.nuvem::after {
+    content: '';
+    background: var(--cor-nuvens);
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.nuvem::before {
+    top: -20px;
+    left: 20px;
+}
+
+.nuvem::after {
+    top: 10px;
+    left: 50px;
 }
